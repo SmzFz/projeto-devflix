@@ -5,9 +5,11 @@ import React, { useEffect, useState } from "react";
 
 import "./App.css";
 
+import loadingu from "../assets/desktop.png";
 import logo from "../assets/devflix.png";
 import searchIcon from "../assets/search.svg";
-import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+import arrowIcon from "../assets/chevron-forward-outline.svg";
+import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";
 import MovieCard from "../components/movieCard/movieCard";
 import Footer from "../components/footer/footer";
 
@@ -47,31 +49,82 @@ const App = () => {
 
   return (
     <div id="app">
-      <div className="logo">
-        <img src={logo} alt="logo devflix" />
+      <div id="my-image">
+        <img src="src/assets/desktop.png"></img>
       </div>
-      <div className="search">
-        <input
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyDown={handleKeyPress}
-          placeholder="Pesquise por filmes"
-        />
-        <img
-          src={searchIcon}
-          alt="Icone de pesquisa"
-          onClick={() => searchMovies(searchTerm)}
-        />
+      <div className="menuHead">
+        <div className="logo">
+          <img
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={handleKeyPress}
+            src={logo}
+            alt="logo devflix"
+          />
+        </div>
+        <div className="linkHead">
+          <ul>
+            <li>
+              <a href={"#"}>Inicio</a>
+            </li>
+            <li>
+              <a href={"#"}>Filmes</a>
+            </li>
+            <li>
+              <a href={"#"}>Séries</a>
+            </li>
+          </ul>
+        </div>
+        <div className="search">
+          <input
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={handleKeyPress}
+            placeholder="Pesquise por filmes"
+          />
+          <img
+            src={searchIcon}
+            alt="Icone de pesquisa"
+            onClick={() => searchMovies(searchTerm)}
+          />
+        </div>
       </div>
       {movies?.length > 0 ? (
         <div className="container">
-          {movies.map((movie) => (
-            <MovieCard key={movie.imdbID} movies={movie} />
-          ))}
+          <div class="alta">
+            <p>
+              <a>Em Alta</a>
+            </p>
+            <img src={arrowIcon} alt="Icone de pesquisa" />
+          </div>
+          <section className="sectio">
+            {movies.map((movie) => (
+              <MovieCard key={movie.imdbID} movies={movie} />
+            ))}
+          </section>
         </div>
       ) : (
         <div className="empty">
           <h2>Nenhum filme encontrado😥</h2>
+        </div>
+      )}
+      {movies?.length > 0 ? (
+        <div className="container">
+          <div class="recomendado">
+            <p>
+              <a>Recomendado</a>
+            </p>
+            <img src={arrowIcon} alt="Icone de pesquisa" />
+          </div>
+          <section className="sectio">
+            {movies.map((movie) => (
+              <MovieCard key={movie.imdbID} movies={movie} />
+            ))}
+          </section>
+        </div>
+      ) : (
+        <div className="empty">
+          <h2></h2>
         </div>
       )}
       <Footer link={"https://github.com.br/SmzFz"}>@SmzFz</Footer>

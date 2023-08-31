@@ -44,7 +44,6 @@ console.log(movie)
         </div>
         <div className={styles.desc}>
           <p>Sinopse: {movie.Plot}</p>
-
         </div>
       </div>
     </div>

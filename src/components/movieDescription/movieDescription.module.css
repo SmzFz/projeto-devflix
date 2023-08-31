@@ -71,7 +71,7 @@
     position: absolute;
     top: 2em;
     left: 2em;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
 }
 .movieType div:nth-of-type(1) img {
@@ -83,7 +83,8 @@
 .movieType a {
     margin-top: 1em;
     padding: 0.2em 0.7em;
-    background: #fff;
+    background: #ffffff;
+    color: #000;
     border-radius: 0.3em;
     text-decoration: none;
     font-weight: bolder;
@@ -100,9 +101,11 @@
 }
 
 .desc{
-    font-size: 16pt;
+    font-size: 12pt;
     padding: 0 2em 2em;
     text-align: justify;
+    white-space: normal;
+
 }
 
 

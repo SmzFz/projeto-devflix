@@ -33,4 +33,5 @@ const MovieCard = ({ movies }) => {
     </>
   );
 };
+
 export default MovieCard;
