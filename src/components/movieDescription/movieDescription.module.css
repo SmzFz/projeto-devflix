@@ -105,13 +105,14 @@
     padding: 0 2em 2em;
     text-align: justify;
     white-space: normal;
+    white-space: normal;
 
 }
 
 
 
 /* coisas tablet */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .movieModal{
         width: 550px;
     }
@@ -122,9 +123,15 @@
 }
 /* coisas celular */
 @media  (max-width: 430px) {
-    .movieModal{
-        width: 320px;
+    .modalBackdrop{
+        width: 20px;
         margin-top: 2em;
+        padding-right: 78em;
+    }
+    .movieModal{
+        width: 20px;
+        margin-top: 2em;
+        padding-right: 78em;
 
     }
     .movieType h1{
