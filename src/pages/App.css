@@ -10,13 +10,12 @@
   box-sizing: border-box;
   font-family: var(--font-raleway);
 }
-\\Cor do corpo
+
 
 body {
   background: #1c2c35;
 }
 
-\\Tela de carregamento do site
 
 #my-image {
   position: absolute;
@@ -44,7 +43,7 @@ body {
   }
 }
 
-\\Mudar cor quando passar em cima
+
 
 a {
   text-decoration: none;
@@ -66,7 +65,7 @@ a:hover {
   padding-top: 0;
 }
 
-\\Div cabeçalho
+
 
 .menuHead {
   width: 100%;
@@ -77,7 +76,7 @@ a:hover {
   padding-top: 1em;
 }
 
-\\Links cabeçalho
+
 
 .linkHead ul {
   align-items: center;
@@ -93,7 +92,7 @@ a:hover {
   margin-right: 55px;
 }
 
-\\Logo DevFlix
+
 
 .logo {
   max-width: 100%;
@@ -106,9 +105,10 @@ a:hover {
   flex-shrink: 0;
   margin: auto;
   object-fit: cover;
+  
 }
 
-\\Botão de pesquisa
+
 
 .search {
   height: 12px;
@@ -151,7 +151,7 @@ a:hover {
   color: #636363;
 }
 
-\\Em alta
+
 
 .alta {
   display: flex;
@@ -174,14 +174,14 @@ a:hover {
   font-size: 18pt;
 }
 
-\\Recomendado
+
 
 .recomendado img {
   display: flex;
   width: 1em;
 }
 
-\\Container de filmes
+
 
 
 .container {
@@ -204,37 +204,66 @@ a:hover {
   display: flex;
 }
 
-\\Responsividade
+
 
 @media screen and (max-width: 600px) {
   .app {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
   .search {
-    padding: 1rem 1.75rem;
+    padding: 1rem 3rem;
     width: 100%;
   }
   .search input {
-    font-size: 1rem;
+    font-size: 0.1rem;
   }
   .search img {
     width: 20px;
     height: 20px;
   }
+
+  .linkHead li{
+    padding-right: 0px;
+  }
 }
 
 @media screen and (max-width: 400px) {
+
+  #app{
+    padding: 0.4em;
+  }
   .app {
-    padding: 4rem 1rem;
+    padding: 1rem ;
   }
   h1 {
     font-size: 2rem;
   }
   .container {
     margin-top: 2rem;
+    padding-left: 125em;
   }
   .movie {
     width: 100%;
     margin: 1rem;
   }
+  .search {
+    padding: 1rem 3rem;
+    width: 100%;
+  }
+
+  .search input{
+    flex: 1;
+    border: none;
+    padding-right: 1rem;
+    outline: none;
+    color: #000000;
+    background: #64697a;
+    font-weight: bolder;
+    font-size: 0.1em;
+    font-weight: 500;
+
+  }
+
+
+
 }

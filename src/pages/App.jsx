@@ -50,7 +50,7 @@ const App = () => {
   return (
     <div id="app">
       <div id="my-image">
-        <img src="src/assets/desktop.png"></img>
+    <img src="src/assets/desktop.png"></img>
       </div>
       <div className="menuHead">
         <div className="logo">
