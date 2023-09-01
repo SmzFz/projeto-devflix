@@ -10,10 +10,13 @@
   box-sizing: border-box;
   font-family: var(--font-raleway);
 }
+\\Cor do corpo
 
 body {
   background: #1c2c35;
 }
+
+\\Tela de carregamento do site
 
 #my-image {
   position: absolute;
@@ -40,6 +43,9 @@ body {
     display: none;
   }
 }
+
+\\Mudar cor quando passar em cima
+
 a {
   text-decoration: none;
   transition: 0.3;
@@ -60,6 +66,8 @@ a:hover {
   padding-top: 0;
 }
 
+\\Div cabeçalho
+
 .menuHead {
   width: 100%;
   display: flex;
@@ -68,6 +76,8 @@ a:hover {
   padding-right: 15em;
   padding-top: 1em;
 }
+
+\\Links cabeçalho
 
 .linkHead ul {
   align-items: center;
@@ -83,6 +93,8 @@ a:hover {
   margin-right: 55px;
 }
 
+\\Logo DevFlix
+
 .logo {
   max-width: 100%;
   overflow: hidden;
@@ -95,6 +107,8 @@ a:hover {
   margin: auto;
   object-fit: cover;
 }
+
+\\Botão de pesquisa
 
 .search {
   height: 12px;
@@ -137,6 +151,8 @@ a:hover {
   color: #636363;
 }
 
+\\Em alta
+
 .alta {
   display: flex;
   font-weight: bolder;
@@ -158,10 +174,15 @@ a:hover {
   font-size: 18pt;
 }
 
+\\Recomendado
+
 .recomendado img {
   display: flex;
   width: 1em;
 }
+
+\\Container de filmes
+
 
 .container {
   width: 100%;
@@ -182,6 +203,8 @@ a:hover {
 .sectio {
   display: flex;
 }
+
+\\Responsividade
 
 @media screen and (max-width: 600px) {
   .app {
